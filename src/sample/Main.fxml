@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="823.0" prefWidth="1219.0" stylesheets="@MainStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox fx:id="buttonHboxContain" alignment="CENTER" layoutY="21.0" prefHeight="102.0" prefWidth="1219.0">
+         <children>
+            <Button fx:id="homeButton" mnemonicParsing="false" text="Home" />
+            <Button fx:id="introbutton" mnemonicParsing="false" text="Introduce">
+               <HBox.margin>
+                  <Insets bottom="30.0" left="60.0" right="30.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="searchButton" mnemonicParsing="false" text="Search">
+               <HBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="newbooksButton" mnemonicParsing="false" text="New Books">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Button>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="330.0">
+               <children>
+                  <TextField alignment="TOP_LEFT" prefHeight="31.0" prefWidth="239.0" />
+                  <Button fx:id="LoginButton" mnemonicParsing="false" onAction="#handleLoginButton" text="Login">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets left="150.0" />
+               </HBox.margin>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

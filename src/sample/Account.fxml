@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane stylesheets="@AccountStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox alignment="CENTER" layoutX="542.0" layoutY="52.0" prefHeight="100.0" prefWidth="278.0" stylesheets="@AccountStyle.css">
+         <children>
+            <Button fx:id="signinBtton" mnemonicParsing="false" text="Sign In" />
+            <Button fx:id="signupBttn" mnemonicParsing="false" onAction="#handleSignUp" text="Sign Up">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="210.0" layoutY="159.0" prefHeight="124.0" prefWidth="444.0" />
+      <PasswordField fx:id="passwordTXTFIeld" layoutX="206.0" layoutY="361.0" prefHeight="49.0" prefWidth="444.0" promptText="password" />
+      <Label fx:id="passwordLabel" layoutX="166.0" layoutY="371.0" prefHeight="39.0" prefWidth="41.0" />
+      <HBox layoutX="208.0" layoutY="283.0" prefHeight="100.0" prefWidth="441.0" stylesheets="@AccountStyle.css">
+         <children>
+            <TextField fx:id="userTXTField" prefHeight="48.0" prefWidth="441.0" promptText="username" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Label fx:id="userLabel" layoutX="166.0" layoutY="294.0" prefHeight="39.0" prefWidth="41.0" />
+      <Button fx:id="enterBttn" layoutX="210.0" layoutY="446.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="444.0" text=" ENTER" />
+      <Label layoutX="278.0" layoutY="680.0" style="-fx-text-fill: black; -fx-font-weight: bold;" stylesheets="@AccountStyle.css" text="Software development team: Unitech" />
+      <Button fx:id="backBttn" layoutX="14.0" layoutY="81.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+   </children>
+</AnchorPane>

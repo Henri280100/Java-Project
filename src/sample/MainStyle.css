@@ -1,0 +1,14 @@
+
+
+#homeButton, #introbutton, #searchButton, #newbooksButton{
+    -fx-background-radius: 18px;
+}
+
+#PaneContainer{
+    -fx-background-color: aqua;
+}
+
+#LoginButton{
+    -fx-background-radius: 18px;
+}
+
